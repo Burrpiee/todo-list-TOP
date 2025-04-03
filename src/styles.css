@@ -24,6 +24,10 @@ body {
     height: 100vh;
 }
 
+li {
+    list-style-type: none;
+}
+
 .content-header,
 .projects-header {
     display: flex;
