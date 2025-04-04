@@ -19,8 +19,20 @@
                     
                 </li>
                 <div class="add-project-container">
-                    <form class="add-project-form">
-                        
+                    <form id="add-project-form">
+                        <h3>Add Project</h3>
+                        <div class="form-group">
+                            <label for="project_name">Name</label>
+                            <input type="text" id="project_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="project_desc">Description</label>
+                            <textarea name="project_desc" id="project_desc"></textarea>
+                        </div>
+                        <div class="project-form-action">
+                            <button type="button" id="cancel-add-project" class="cancel-btn">Cancel</button>
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -32,6 +44,48 @@
                 <button class="add-button" id="add-todo-button">+</button>
             </div>
             <hr>
+            <div class="add-todo-container">
+                <form id="add-todo-form">
+                    <h3>New Todo Item</h3>
+                    <div class="form-group">
+                        <label for="todo-title">Title</label>
+                        <input type="text" id="todo-title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="todo-desc">Description</label>
+                        <textarea id="todo-desc"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="todo-due-date">Date</label>
+                            <input type="date" id="todo-due-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="todo-priority">Priority</label>
+                            <select id="todo-priority">
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="todo-notes">Notes</label>
+                        <textarea id="todo-notes"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="todo-project">Project</label>
+                        <select id="todo-project">
+                            <option value="default">Default</option>
+                        </select>
+                    </div>
+                    <div class="todo-form-action">
+                        <button type="button"
+                        id="cancel-todo-btn" class="cancel-btn">Cancel</button>
+                        <button type="submit" class="submit-btn">Add</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </body>
