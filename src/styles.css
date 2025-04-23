@@ -8,6 +8,7 @@ body {
     line-height: 1.5;
     height: 100vh;
     -webkit-font-smoothing: antialiased;
+    font-family: 'EB Garamond', serif;
 }
 
 hr {
@@ -58,10 +59,22 @@ li {
     margin-top: 1rem;
 
     button {
+        background-color: white;
         padding: 8px 12px;
         border: none;
         border-radius: 4px;
     }
+}
+
+.projects-list {
+    margin-bottom: 1.5rem;
+}
+
+.add-project-container {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: lightgrey;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .add-todo-container {
@@ -69,19 +82,13 @@ li {
     padding: 24px;
     max-width: 800px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 24px;
+    border-radius: 12px;
+    background-color: lightgrey;
 
     #todo-title {
         max-width: 200px;
     }
 
-    input[type="date"],
-    textarea, select {
-        width: 100%;
-        padding: 0.5rem;
-        border: 1px solid;
-        font-size: 1rem;
-    }
 }
 
 textarea {
@@ -94,6 +101,7 @@ textarea {
     gap: 1rem;
 
     button {
+        background-color: white;
         width: 72px;
         padding: 8px 12px;
         border: none;
@@ -108,4 +116,93 @@ textarea {
     height: 24px;
     width: 24px;
     font-size: 1.2rem;
+}
+
+.todo-details {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: lightgrey;
+    height: 100%;
+}
+
+.details-content {
+    padding: 36px;
+    width: 450px;
+}
+
+.checklist-section {
+    margin-top: 24px;
+}
+
+.checklist-header {
+    margin-bottom: 12px;
+}
+
+.add-checklist-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 0.25rem;
+
+    input[type="text"] {
+        padding: 0.3rem;
+        flex: 1;
+    }
+}
+
+.checklist-form-action {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+
+    button {
+        background-color: white;
+        width: fit-content;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 6px;
+        margin-top: 1rem;
+    }
+}
+
+.details-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.close-button {
+    border: 0;
+    background: 0;
+    cursor: pointer;
+    font-size: 1.5rem;
+    
+    &:hover {
+        color: red;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Form input formatting */
+input[type="date"],
+textarea, select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+input[type="date"],
+select {
+    height: 2.5rem;
+}
+
+input[type="text"] {
+    border: 1px solid;
+    padding: 0.1rem;
+    border-radius: 4px;
 }

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -20,7 +23,7 @@
                 </li>
                 <div class="add-project-container">
                     <form id="add-project-form">
-                        <h3>Add Project</h3>
+                        <h3 class="checklist-header">Add Project</h3>
                         <div class="form-group">
                             <label for="project_name">Name</label>
                             <input type="text" id="project_name" required>
@@ -89,7 +92,7 @@
             <div class="todo-list"></div>
         </div>
 
-        <div id="todo-details" class="todo-details">
+        <div id="todo-details" class="todo-details" >
             <div class="details-content">
                 <div class="details-header">
                     <h2>Todo details</h2>
@@ -133,7 +136,7 @@
                         </div>
                     </div>
 
-                     <div class="form-action">
+                     <div class="checklist-form-action">
                         <button type="button" id="cancel-edit" class="btn-cancel">Cancel</button>
                         <button type="submit" class="submit-btn">Save Changes</button>
                     </div>
