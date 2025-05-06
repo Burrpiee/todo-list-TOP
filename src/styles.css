@@ -11,6 +11,10 @@ body {
     font-family: 'EB Garamond', serif;
 }
 
+input, textarea, select {
+    font: inherit;
+}
+
 hr {
     margin-bottom: 1rem;
 }
@@ -41,6 +45,7 @@ li {
     align-items: center;
 }
 
+/* Form lines formatting */
 .form-group {
     display: flex;
     flex-direction: column;
@@ -51,6 +56,14 @@ li {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+}
+
+/* Add project form */
+#add-project-container {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: lightgrey;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project-form-action {
@@ -70,14 +83,10 @@ li {
     margin-bottom: 1.5rem;
 }
 
-.add-project-container {
-    padding: 12px;
-    border-radius: 8px;
-    background-color: lightgrey;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
 
-.add-todo-container {
+
+/* Add todo form */
+#add-todo-container {
     margin-top: 1rem;
     padding: 24px;
     max-width: 800px;
@@ -89,10 +98,6 @@ li {
         max-width: 200px;
     }
 
-}
-
-textarea {
-    min-height: 100px;
 }
 
 .todo-form-action {
@@ -110,14 +115,20 @@ textarea {
     }
 }
 
+/* Show form buttons */
 .add-button {
     border: 0;
     border-radius: 50%;
     height: 24px;
     width: 24px;
     font-size: 1.2rem;
+
+    &:hover {
+        background-color: lightgray;
+    }
 }
 
+/* Add details form */
 .todo-details {
     position: fixed;
     top: 0;
@@ -171,6 +182,12 @@ textarea {
     justify-content: space-between;
 }
 
+/* Form buttons formatting */
+.cancel-btn:hover,
+.submit-btn:hover {
+    background-color: darkgray;
+}
+
 .close-button {
     border: 0;
     background: 0;
@@ -182,6 +199,7 @@ textarea {
     }
 }
 
+/* Hidden class */
 .hidden {
     display: none !important;
 }
@@ -205,4 +223,8 @@ input[type="text"] {
     border: 1px solid;
     padding: 0.1rem;
     border-radius: 4px;
+}
+
+textarea {
+    min-height: 100px;
 }
